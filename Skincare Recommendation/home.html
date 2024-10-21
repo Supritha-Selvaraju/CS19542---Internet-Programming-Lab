@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Symbotica ></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Top Brands</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form action="search.php" method="get">
+                <input type="text" name="query" placeholder="Search for skin type, product, or ingredient...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore the Best of Skincare</h1>
+            <p>Find products tailored to your skin type and concerns.</p>
+        </div>
+    </section>
+<!-- User Form Section -->
+<section class="user-details" id="form-section">
+    <div class="form-container">
+        <h2>Let's Get to Know You</h2>
+        <form id="user-form" action="recommend.php" method="post">
+            <div class="form-row">
+                <div class="input-group">
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="input-group">
+                    <input type="number" id="age" name="age" required placeholder="Enter your age">
+                </div>
+                <div class="input-group">
+                    <select id="skin-type" name="skin_type" required>
+                        <option value="" disabled selected>Select your skin type</option>
+                        <option value="dry">Dry</option>
+                        <option value="oily">Oily</option>
+                        <option value="sensitive">Sensitive</option>
+                        <option value="normal">Normal</option>
+                        <option value="all skin types">All Skin Type</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <select name="product_type" id="product-type">
+                        <option value="" disabled selected>Select product type</option>
+                        <option value="Toner">Toner</option>
+                        <option value="Face Cleanser">Face Cleanser</option>
+                        <option value="Facial Treatment">Facial Treatment</option>
+                        <option value="Serum">Serum</option>
+                        <option value="General Moisturizer">General Moisturizer</option>
+                        <option value="Sunscreen">Sunscreen</option>
+                        <option value="Exfoliator">Exfoliator</option>
+                        <option value="Face Makeup">Face Makeup</option>
+                        <option value="Bath & Body">Bath & Body</option>
+                        <option value="Makeup Remover">Makeup Remover</option>
+                        <option value="Day Moisturizer">Day Moisturizer</option>
+                        <option value="Other Haircare">Other Haircare</option>
+                        <option value="Shampoo">Shampoo</option>
+                        <option value="Fragrance">Fragrance</option>
+                        <option value="Hand Care">Hand Care</option>
+                        <option value="Conditioner">Conditioner</option>
+                        <option value="Lip Moisturizer">Lip Moisturizer</option>
+                        <option value="Eye Moisturizer">Eye Moisturizer</option>
+                        <option value="Sheet Mask">Sheet Mask</option>
+                        <option value="Eye Makeup">Eye Makeup</option>
+                        <option value="Tanning">Tanning</option>
+                        <option value="Wet Mask">Wet Mask</option>
+                        <option value="Emulsion">Emulsion</option>
+                        <option value="Overnight Mask">Overnight Mask</option>
+                        <option value="Makeup Applicator">Makeup Applicator</option>
+                        <option value="Night Moisturizer">Night Moisturizer</option>
+                        <option value="Lip Makeup">Lip Makeup</option>
+                        <option value="Oil">Oil</option>
+                        <option value="Essence">Essence</option>
+                        <option value="Cheek Makeup">Cheek Makeup</option>
+                        <option value="Nail Care">Nail Care</option>
+                        <option value="Lip Mask">Lip Mask</option>
+                        <option value="Eye Mask">Eye Mask</option>
+                        <option value="Tool">Tool</option>
+                        <option value="False Eyelash">False Eyelash</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</section>
+
+    
+</section>
+
+    <!-- Product Highlights Section -->
+    <section class="product-highlights">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/cleanser.jpg" alt="Cleanser">
+                <h3>Charcoal Detox Cleanser</h3>
+                <p>$165</p>
+                <button>View Product</button>
+            </div>
+            <div class="product-card">
+                <img src="images/serum.jpg" alt="Serum">
+                <h3>Vitamin C Serum</h3>
+                <p>$125</p>
+                <button>View Product</button>
+            </div>
+            <div class="product-card">
+                <img src="images/products.jpg" alt="Moisturizer">
+                <h3>Hydrating Moisturizer</h3>
+                <p>$85</p>
+                <button>View Product</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>Transformations from Happy Customers</h2>
+        <div class="testimonial">
+            <img src="images/client1.jpg" alt="Customer">
+            <p>"This serum transformed my skin! It’s glowing and clearer than ever."</p>
+            <p>- Jessica</p>
+        </div>
+        <div class="testimonial">
+            <img src="images/client2.jpg" alt="Customer">
+            <p>"I’ve never had such soft skin. The cleanser is amazing!"</p>
+            <p>- Amanda</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Symbotica. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
